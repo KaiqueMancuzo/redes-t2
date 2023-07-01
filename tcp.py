@@ -262,7 +262,6 @@ class Conexao:
 
         self.servidor.rede.enviar(segmento_checked + payload, src_addr)
 
-        # Medir o tempo de início do timer
         self.timer_start_time = time()
 
         self.timer = asyncio.get_event_loop().call_later(self.timeoutInterval, self.timer_run)
