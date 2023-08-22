@@ -309,7 +309,7 @@ class Conexao:
         """
         Usado pela camada de aplicação para fechar a conexão
         """
-        # TODO: implemente aqui o fechamento de conexão
+
         src_addr, src_port, dst_addr, dst_port = self.id_conexao
 
         segmento = make_header(dst_port, src_port, self.seq_no, self.ack_no, FLAGS_FIN)
